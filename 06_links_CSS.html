@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebeca">
+        <meta name="decription" content="Lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: purple;
+            }
+            /* Formatando lista ul e ol e links*/
+            
+            a{       
+                color: blue;
+            }
+            a:link{     /* Link padrão */
+                color:aqua;
+            }
+            a:hover{    /*Quando passa o mouse sobre o link */
+                background-color:gray;
+            }
+            a:visited{  /*Quando o link já foi visitado*/
+                color:green;
+            }
+            a:active{   /*Quando está pressionando o mouse sobre o link */
+                color:orange;
+            }
+
+            ul li{
+                list-style-type: circle;
+            }
+            ol li{
+                list-style-type: upper-roman;
+                list-style-position: outside;
+            }
+
+        </style>
+        </head>
+    <body>
+        <a href="01_teste.html">Veja o primeiro arquivo</a>
+        <a href="02_tags.html">Veja o segundo arquivo </a>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+       
+        <p>Parágrafo 1</p>
+    </body>
+</html>
