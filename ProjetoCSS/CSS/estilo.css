@@ -43,10 +43,10 @@ header h2{
 }
 
 footer{
+    height: 80px;
     color: white;
     background-color: rgb(98, 109, 103);
     text-align: center;
-    margin-top: 15px;
-    padding: 10px;
     text-shadow: 3px 3px 2px black;
+    line-height: 80px;
 }
