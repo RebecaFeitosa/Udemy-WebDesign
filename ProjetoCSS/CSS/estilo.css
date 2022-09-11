@@ -76,6 +76,17 @@ main{
     box-sizing: border-box;
 }
 
+.card a {
+    display: block;
+    padding: 15px; 
+    text-decoration: none;
+    color: white;
+}
+
+.card a:hover{
+    background: rgba(0,0,0,0.4);
+}
+
 .card-1, .card-2{
     margin-right: 2%;
 }
@@ -87,11 +98,9 @@ main{
 
 .card p{
     background-color: rgb(54, 54, 54);
-    color: white;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 15px;
     font-size: 10px;
 }
 
