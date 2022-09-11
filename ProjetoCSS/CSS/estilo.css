@@ -24,6 +24,13 @@ body{
     text-shadow: 3px 3px 2px black;
 }
 
+.hero-content p{
+    background-color: rgba(0,0,0, .6);
+    display:inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
 .hero nav ul{
     text-align: right;
     margin: 20px 40px 0 0;
@@ -60,17 +67,47 @@ main{
     background-color: white;
     padding: 15px;
     margin-top: 15px;
+    overflow: auto;
 }
 
-header h2{
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.card-1, .card-2{
+    margin-right: 2%;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card p{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+    font-size: 10px;
+}
+
+.content-header h2{
     color: black;
-    background-color: rgb(163, 179, 170);
+    background-color: rgb(220, 228, 223);
     border-bottom: solid;
     text-align: left;
     padding: 5px;
 }
 
-footer{
+.content-header h2{
+    margin:0;
+}
+
+.rodape{
     height: 80px;
     color: white;
     background-color: rgb(98, 109, 103);
