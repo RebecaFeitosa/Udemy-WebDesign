@@ -8,6 +8,24 @@
         <meta name="author" content="Rebeca">
         <meta name="decription" content="Lista de documentos">
         <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            li ul{
+                height: 0;
+                overflow: hidden;
+            }
+
+            li:hover{
+                background-color: aquamarine;
+            }
+
+            li:hover ul{    /*formatar toda ul que está dentro de uma li cuja o mouse está sobre ela*/
+                display: block;
+                height: 30px;
+                transition: height .5s ;
+            }
+
+        </style>
     </head>
     <body>
 
@@ -19,6 +37,17 @@
                     <li>Item a</a></li>
                     <li>Item b</li>
                 </ol>
+            </li>
+            <li>Item 3</li>
+        </ul>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Item a</a></li>
+                    <li>Item b</li>
+                </ul>
             </li>
             <li>Item 3</li>
         </ul>
@@ -45,6 +74,6 @@
             <dd>Linguagem script para internet</dd>
             <dd>Script para rodar no browser</dd>
         </dl>
-        
+
     </body>
 </html>
