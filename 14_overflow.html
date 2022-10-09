@@ -1,0 +1,74 @@
+<!--Exemplo do uso da propriedade overflow -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebeca">
+        <meta name="decription" content="Lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+
+            div{
+                padding: 2%;
+                border: 1px solid black;
+                width: 17%;
+                display: inline-block;
+                height: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+
+            .div1{
+                overflow: visible;
+            }
+
+            .div2{
+                overflow: hidden;
+            }
+
+            .div3{
+                overflow: scroll;
+            }
+
+            .div4{
+                overflow: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+
+       <div class="div1">
+        <p>Lorem ipsum diam mauris porttitor purus semper dolor elementum 
+            eros pulvinar mi, ipsum turpis accumsan placerat consequat leo 
+            sapien eu erat odio, in eleifend varius nunc porttitor mattis 
+            suspendisse velit tellus nec.</p>
+       </div>
+
+       <div class="div2">
+        <p>Fusce quis taciti mauris at curae tincidunt quisque dapibus id, 
+        lorem feugiat tempor malesuada feugiat vel vestibulum nulla, 
+        inceptos vel suspendisse hendrerit pretium viverra dapibus dolor. 
+        Habitasse ante tortor at odio quisque urna, sagittis egestas nulla 
+        arcu dui, tempor.</p>
+       </div>
+
+       <div class="div3">
+        <p>Leo fringilla curae hac habitasse sollicitudin lacinia justo id vitae, libero 
+        cras mattis donec arcu duis nec libero consequat ante, metus pretium quisque 
+        vehicula sem felis dictumst maecenas.</p>
+       </div>
+
+       <div class="div4">
+        <p>Litora sapien augue elit egestas lobortis aliquet, at interdum posuere cubilia 
+        aenean sit aenean nostra donec sodales. lacinia maecenas tempor aliquam mi 
+        neque rhoncus aptent nibh blandit integer, scelerisque himenaeos iaculis 
+        lobortis scelerisque lobortis posuere at etiam, himenaeos senectus condimentum 
+        netus mi justo sit iaculis eget. </p>
+       </div>
+
+    </body>
+</html>
