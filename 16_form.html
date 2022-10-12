@@ -10,22 +10,21 @@
     <body>
         <h1>Exemplo de formulário</h1>
 
-        <form action="http://google.com/search" methodo="get" target="_blank"> <!--action é a página de quem
-        vai receber esses dados e o methodo é como você quer enviar:
-        methodo="get" envia pela URL, sem segurança
-        methodo="post" envia com segurança, escondido 
-        -->
+         <!--action é a página de quem vai receber esses dados e o methodo é como você quer enviar:
+        methodo="get" envia pela URL, sem segurança e o methodo="post" envia com segurança, escondido -->
+        <form action="http://google.com/search" methodo="get" target="_blank">
+            
+            <!--Tag label coloca um texto com uma etiqueta no form, para o label identificar(id) o input, 
+            usa-se o atributo for="com um valor único" (id) e coloca esse mesmo nome no input-->
+            <label for="txtbusca">Faça uma busca</label>
 
             <!--Entrada de dados e o tipo dos dados, name serve para o servidor identificar o nome, 
-            exemplo se é usuário ou senha, ou seja, estou enviando pro servidor um valor
-            que foi digitado através desse name"q" -->
-            <input type="text" name="q"> 
+            ou seja, estou enviando para o servidor um valor que foi digitado através desse name"q" -->
+            <input type="text" name="q" id="txtbusca"> 
 
-            <!--Para colocar botão, submit=enviar os dados e no value 
-            coloca o que vc quer que apareça escrito no botão-->
+            <!--Para colocar botão, submit=enviar os dados e no value coloca o que será escrito no botão-->
             <input type="submit" value="OK"> 
-
-
+            
         </form>
     </body>
 </html>
