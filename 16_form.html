@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebeca">
+        <meta name="decription" content="Lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>Exemplo de formulário</h1>
+
+        <form action="http://google.com/search" methodo="get" target="_blank"> <!--action é a página de quem
+        vai receber esses dados e o methodo é como você quer enviar:
+        methodo="get" envia pela URL, sem segurança
+        methodo="post" envia com segurança, escondido 
+        -->
+
+            <!--Entrada de dados e o tipo dos dados, name serve para o servidor identificar o nome, 
+            exemplo se é usuário ou senha, ou seja, estou enviando pro servidor um valor
+            que foi digitado através desse name"q" -->
+            <input type="text" name="q"> 
+
+            <!--Para colocar botão, submit=enviar os dados e no value 
+            coloca o que vc quer que apareça escrito no botão-->
+            <input type="submit" value="OK"> 
+
+
+        </form>
+    </body>
+</html>
