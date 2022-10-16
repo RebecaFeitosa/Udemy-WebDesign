@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebeca">
+        <meta name="decription" content="Lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+    </head>
+    <body>
+        <h1>Exemplo de formulário</h1>
+
+        <form action="#" methodo="post" class="formLogin">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label>Email</label>
+                <input type="email" required placeholder="Digite um email válido"> 
+
+                <label>Número de filhos</label>
+                <input type="number" min="0" max="1000">
+
+                <br>
+                <label>Nascimento</label>
+                <input type="date" min="2004-01-01" max="2138-01-01">
+
+                <p>Sexo:</p>
+                <label>
+                    <input type="radio" name="sexo" value="M">
+                    Masculino
+                </label>
+
+                <label>
+                    <input type="radio" name="sexo" value="F">
+                    Feminino
+                </label>
+
+                <input type="hidden" name="expira" value="2022-12-30">
+
+                <br> <!--na prática não usamos br para pular linhas em formulários-->
+                
+                <label>Estado</label>
+                <select name="estado">
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="BA">Bahia</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </fieldset> 
+
+            <fieldset>
+                <legend>Área de Interesse</legend>
+
+                <label>
+                    <input type="checkbox" name="html" value="html">HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="css" value="css">CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="js" value="js">JavaScript
+                </label>
+
+                <label>
+                    <input type="checkbox" name="php" value="php">PHP
+                </label>
+
+                <label>
+                    <input type="checkbox" name="java" value="java">Java
+                </label>
+
+                <label>
+                    <input type="checkbox" name="py" value="py">Phyton
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Mensagem</legend>
+                <textarea style="resize: none" name="msg" 
+                cols="30" rows="10" maxlength="500" placeholder="Descreva sua história"></textarea>
+
+                <textarea style="resize: none" name="contrato" 
+                cols="30" rows="10" readonly>Aqui entra o texto do contrato que precisa ser aceito</textarea>
+                <label><input type="checkbox" checked>Li e aceito</label>
+                <br>
+                <input type="range" min="0" max="10" step=".5">
+                <input type="time">
+                <input type="color">
+
+                <br>
+                <select size="5" multiple>
+                    <option>Opcção 1</option>
+                    <option>Opcção 2</option>
+                    <option>Opcção 3</option>
+                    <option>Opcção 4</option>
+                    <option>Opcção 5</option>
+                </select>
+            </fieldset>
+
+                <br>
+                <input type="submit" value="enviar">
+                <input type="button" value="button"> <!--Não manda nem reseta, pode ser tratado no js, para outra coisa-->
+                <input type="reset" value="Limpar">
+               
+        </form>
+    </body>
+</html>
