@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebeca">
+        <meta name="decription" content="Lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            #radius{
+                background: purple;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                
+                border-radius: 50px 100px / 100px 50px; 
+
+                /* Recebe alguns valores: 
+                1º eixo x(horizontal), 2º eixo y(vertical), esfumaçamento tamanho e cor */
+                box-shadow: 30px 0 10px -20px black, 10px 10px 0 red, -5px -5px 0 0px blue;
+
+                /* Para colocar mais de uma sombra o mesmo elemento é só acrescentar uma vírgula
+                e depois os valores:  box-shadow: 10px -10px 10px 20px black, 10px 10px 0 red;    */
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>CSS efeitos - box-shadow</h1>
+
+        <div id="radius"></div>
+    </body>
+</html>
