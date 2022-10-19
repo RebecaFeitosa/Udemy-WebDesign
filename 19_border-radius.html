@@ -1,0 +1,34 @@
+<!--O border radius se referencia por uma esfera, mas se quiser mudar um pouco e 
+    não deixar uma esfera perfeita é só seguir o exemplo abaixo
+    border-radius: 50px 20px 100px 0 / 20px 50px 100px 0;   -->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebeca">
+        <meta name="decription" content="Lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            #radius{
+                background: purple;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                
+                /*Aplica no sentido horario: sup esque, 
+                sup direito, infe direito, infe esque */
+                border-radius: 50px 100px / 100px 50px; 
+
+                /*border-radius: 25px;  dessa maneira aplica em todos os lados, igualmente*/
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>CSS efeitos - border radius</h1>
+
+        <div id="radius"></div>
+    </body>
+</html>
