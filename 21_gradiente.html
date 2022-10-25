@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rebeca">
+        <meta name="decription" content="Lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+
+            html, body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body{
+                background-color: purple;
+                background-image: linear-gradient(to top, rgba(0,0,0,.8), transparent), 
+                url(imagens/bg.jpg);
+
+                background-size: auto, 100% 100%;
+                /*
+                background-image: linear-gradiente(70deg, red 200px, blue 200px,
+                black 250px, black 300px, white300px, white 350px, orange 400px), 
+                url(imagens/bg.jpg);
+
+                ou em porcentagem
+
+                background-image: linear-gradiente(70deg, red 50%, blue 200px,
+                black, white, orange 40%),
+                url(imagens/bg.jpg);
+
+                */
+            }
+
+            #radius{
+                background: purple;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                
+                border-radius: 50px 100px / 100px 50px; 
+
+                /* Recebe alguns valores: 
+                1º eixo x(horizontal), 2º eixo y(vertical), esfumaçamento tamanho e cor */
+                box-shadow: 30px 0 10px -20px black, 10px 10px 0 red, -5px -5px 0 0px blue;
+
+                /* Para colocar mais de uma sombra o mesmo elemento é só acrescentar uma vírgula
+                e depois os valores:  box-shadow: 10px -10px 10px 20px black, 10px 10px 0 red;    */
+            }
+
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 50px;
+                text-align: center;
+                /* um efeito tipo 3d andando de 1 em  px  */
+                text-shadow: -1px 1px 0 #5d5d5d, 
+                -2px 2px 0 #727272, -3px 3px 0 #868686, 
+                -4px 4px 0 #a3a3a3, -5px 5px 0 #bcbcbc;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>CSS efeitos - box-shadow</h1>
+
+        <div id="radius"></div>
+    </body>
+</html>
